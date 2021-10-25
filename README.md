@@ -1,19 +1,7 @@
 
-## jetPact之WorkManger详解
-
 ### 前言
+这是用jectpack里的workmananger所写的一个小demo，数据抓取自迷糊轻小说，运行时需要提前使用抓包工具抓住其apitoken然后再去[Host.kt](https://github.com/Aoyihala/navoldemo/blob/main/NetClinet/src/main/java/com/mimimi/netclinet/path/Host.kt)修改TEST_APP_TOKEN的值,迷糊轻小说[下载地址](https://github.com/Aoyihala/navoldemo/blob/main/com.yidm.app.apk)
 
-大量应用程序都有在后台执行任务的需求。根据需求的不同，Android为后台任务提供了多种解决方案，如JobScheduler，Loader，Service等。如果这些API没有被适当地使用，可能会消耗大量的电量。Android在解决应用程序耗电问题上做了各种尝试，从Doze到App Standby，通过各种方式限制和管理应用程序，以保证应用程序不会在后台过量消耗设备电量。WorkManager的出现，则是为应用程序中那些不需要及时完成的任务，提供统一的解决方案，以便在设备电量和用户体验之间达到一个比较好的平衡。
-
-### 兼容性
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/a10c24f2c20b49d69f6c4bef4c77dffe.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5LuK5aSp55qE6aOO5YS_5aW96ICA55y8,size_15,color_FFFFFF,t_70,g_se,x_16#pic_center)
-
-
-WorkManager最低能兼容API Level 14，并且不需要设备安装有Google Play Services。因此，不用过于担心兼容性问题。
-
-WorkManager依据设备情况选择方案
-WorkManager能依据设备的情况，选择不同的执行方案。在API Level 23+，通过JobScheduler来完成任务，而在API Level 23以下的设备中，通过AlarmManager和Broadcast Receivers组合完成任务。但无论采用哪种方案，任务最终都是交由Executor来完成。
 
 ### 使用方法
 
