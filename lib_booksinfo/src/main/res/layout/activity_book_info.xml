@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.BookInfoActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            app:contentScrim="#FAFAFA"
+            android:background="#fff"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:expandedTitleMarginEnd="48dp"
+            app:expandedTitleMarginStart="48dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                app:layout_collapseMode="pin"
+                app:layout_collapseParallaxMultiplier="0.7"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+                <ImageView
+                    android:id="@+id/img_book_bigcover"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <FrameLayout
+                    android:background="#80000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <LinearLayout
+                    android:id="@+id/li_infomianview"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginLeft="25dp"
+                        android:id="@+id/img_book_coverinfo"
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/tv_book_info_name"
+                            android:textSize="15sp"
+                            android:textColor="#fff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:textColor="#fff"
+                            android:textSize="12sp"
+                            android:ellipsize="marquee"
+                            android:id="@+id/tv_book_info_des"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:id="@+id/tab_layout"
+            app:layout_scrollFlags="enterAlways"
+            android:background="#fff"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorColor="#DC3E3E"
+            app:tabMode="fixed"
+            android:layout_height="wrap_content">
+        </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="wrap_content">
+
+        <com.mimimi.lib_booksinfo.ui.WrapContentHeightViewPager
+
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.mimimi.lib_booksinfo.ui.WrapContentHeightViewPager>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

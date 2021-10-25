@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Book2.iml" filepath="$PROJECT_DIR$/.idea/modules/Book2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NetClinet/Book2.NetClinet.iml" filepath="$PROJECT_DIR$/.idea/modules/NetClinet/Book2.NetClinet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Book2.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Book2.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hwtxtreaderlib/Book2.hwtxtreaderlib.iml" filepath="$PROJECT_DIR$/.idea/modules/hwtxtreaderlib/Book2.hwtxtreaderlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib_booksinfo/Book2.lib_booksinfo.iml" filepath="$PROJECT_DIR$/.idea/modules/lib_booksinfo/Book2.lib_booksinfo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/Book2.libs.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/Book2.libs.iml" />
+    </modules>
+  </component>
+</project>

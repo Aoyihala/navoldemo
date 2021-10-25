@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mimimi.lib_book">
+
+    <application>
+        <activity
+            android:name=".ui.TextReadActivity"
+            android:exported="true" />
+        <activity android:name=".ui.BookInfoActivity" android:exported="true"/>
+        <activity android:name=".ui.TestActivity" android:exported="true"/>
+    </application>
+
+</manifest>
